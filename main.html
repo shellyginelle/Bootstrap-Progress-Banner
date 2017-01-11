@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Bootstrap Progress Bar</title>
+
+<!--Main Progress Bar Stylesheets and Scripts-->
+<link rel="stylesheet" type="text/css" href="style.css" />
+<script src="script.js"></script>
+
+<!--Bootstrap Stylesheet and Scripts-->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" type='text/css'/>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+</head>
+
+<body>
+
+<div class="timeline timeline-horizontal" >
+  <!--Stage 1 Initiation-->
+  <div class="timeline-item phase-width init" >
+    <div class="timeline-badge info main-phase init"><i class="glyphicon glyphicon-pushpin"></i> Initiation
+              <div id="InitToolTip"  class="tooltiptext"></div>
+    </div>
+      <div class="timeline-item" >
+              <div id="initiation" class="timeline-badge success"></div>
+          </div>
+      <div class="timeline-item" >
+              <div id="bus_case" class="timeline-badge success"></div>
+      </div>
+      <div class="timeline-item" >
+              <div id="prj_charter" class="timeline-badge success"></div>
+      </div>
+    </div>
+
+  <!--Stage 2 Planning-->
+  <div class="timeline-item phase-width plan" >
+    <div class="timeline-badge info main-phase plan" ><i class="glyphicon glyphicon-time"></i> Planning
+              <div id="PlanToolTip"  class="tooltiptext"></div>
+    </div>
+          <div class="timeline-item">
+              <div id="bus_req" class="timeline-badge success donut"></div>
+      </div>
+          <div class="timeline-item" >
+              <div id="sec_risk_ases" class="timeline-badge success donut"></div>
+      </div>
+      <div class="timeline-item" >
+              <div id="chg_mang_ases" class="timeline-badge success donut"></div>
+      </div>
+          <div class="timeline-item" >
+              <div id="plan_PGT" class="timeline-badge success donut"></div>
+          </div>
+  </div>
+
+  <!--Stage 3 Execution-->
+  <div class="timeline-item phase-width exec" >
+    <div class="timeline-badge info main-phase exec"><i class="glyphicon glyphicon-send"></i> Execution
+              <div id="ExecToolTip"  class="tooltiptext"></div>
+    </div>
+      <div class="timeline-item" >
+              <div id="chg_mang_plan" class="timeline-badge success loading"></div>
+      </div>
+          <div class="timeline-item" >
+              <div id="trans_sup_plan" class="timeline-badge success loading"></div>
+      </div>
+      <div class="timeline-item" >
+              <div id="exec_plan" class="timeline-badge success loading"></div>
+          </div>
+  </div>
+
+  <!--Stage 4 Closure-->
+  <div class="timeline-item phase-width clos" >
+    <div class="timeline-badge info main-phase clos"><i class="glyphicon glyphicon-flag"></i> Closure
+              <div id="CloseToolTip"  class="tooltiptext"></div>
+    </div>
+      <div class="timeline-item" >
+              <div id="prj_close" class="timeline-badge default"></div>
+          </div>
+  </div>
+</div>
+
+</html>
