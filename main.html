@@ -6,6 +6,7 @@
 
 <!--Main Progress Bar Stylesheets and Scripts-->
 <link rel="stylesheet" type="text/css" href="style.css" />
+<link rel="stylesheet" type="text/css" href="assessment-form-style.css" />
 <script src="script.js"></script>
 
 <!--Bootstrap Stylesheet and Scripts-->
@@ -17,6 +18,7 @@
 
 <body>
 
+<!--Bootstrap Progress-Bar Start-->
 <div class="timeline timeline-horizontal" >
   <!--Stage 1 Initiation-->
   <div class="timeline-item phase-width init" >
@@ -79,5 +81,64 @@
           </div>
   </div>
 </div>
+<!--Bootstrap Progress-Bar End-->
+
+<!--Bootstrap Survey-Form Start-->
+<table class="table">
+	<tr>
+		<th colspan="2" class="noinherit"> </th>
+		<th class="impactlabel major">Major</th>
+		<th class="impactlabel moderate">Moderate</th>
+		<th class="impactlabel minor">Minor</th>
+		<th class="impactlabel marginal">Marginal</th>
+	</tr>
+
+	<!--Section-->
+	<tr>
+		<td rowspan="2" class="sidetopicslabel"><h3>Lorem Ipsum</h3> 
+			<br />Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+		</td>
+		<td rowspan="2" class="subtopiclabel">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</td>
+		<td ID="TypeOfImpactMajor" class="impactcategorylabel">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</td>
+		<td ID="TypeOfImpactModerate" class="impactcategorylabel">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</td>
+		<td ID="TypeOfImpactMinor" class="impactcategorylabel">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</td>
+		<td ID="TypeOfImpactMarginal" class="impactcategorylabel">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</td>
+	</tr>
+	<tr>
+		<td class="impactcategorylabel">
+			<form>
+			<input type="radio" ID="TypeOfImpactRadioMajor" name="TypeOfImpactRadioList"
+				onclick="$(TypeOfImpactMajor).addClass('impactcategorylabel major');
+							$(TypeOfImpactModerate).removeClass('impactcategorylabel moderate').addClass('impactcategorylabel');
+							$(TypeOfImpactMinor).removeClass('impactcategorylabel minor').addClass('impactcategorylabel');
+							$(TypeOfImpactMarginal).removeClass('impactcategorylabel marginal').addClass('impactcategorylabel');" />
+		</td>
+		<td class="impactcategorylabel">
+			<input type="radio" ID="TypeOfImpactRadioModerate" name="TypeOfImpactRadioList"
+				onclick="$(TypeOfImpactMajor).removeClass('impactcategorylabel major').addClass('impactcategorylabel');
+							$(TypeOfImpactModerate).addClass('impactcategorylabel moderate');
+							$(TypeOfImpactMinor).removeClass('impactcategorylabel minor').addClass('impactcategorylabel');
+							$(TypeOfImpactMarginal).removeClass('impactcategorylabel marginal').addClass('impactcategorylabel');" />                                                                         
+		</td>
+		<td class="impactcategorylabel">
+			<input type="radio" ID="TypeOfImpactRadioMinor" name="TypeOfImpactRadioList"
+				onclick="$(TypeOfImpactMajor).removeClass('impactcategorylabel major').addClass('impactcategorylabel');
+							$(TypeOfImpactModerate).removeClass('impactcategorylabel moderate').addClass('impactcategorylabel');
+							$(TypeOfImpactMinor).addClass('impactcategorylabel minor');
+							$(TypeOfImpactMarginal).removeClass('impactcategorylabel marginal').addClass('impactcategorylabel');" />
+		</td>
+		<td class="impactcategorylabel">
+			<input type="radio" ID="TypeOfImpactRadioMarginal" name="TypeOfImpactRadioList"
+				onclick="$(TypeOfImpactMajor).removeClass('impactcategorylabel major').addClass('impactcategorylabel');
+							$(TypeOfImpactModerate).removeClass('impactcategorylabel moderate').addClass('impactcategorylabel');
+							$(TypeOfImpactMinor).removeClass('impactcategorylabel minor').addClass('impactcategorylabel');
+							$(TypeOfImpactMarginal).addClass('impactcategorylabel marginal');" />    
+			</form>							
+		</td>
+	</tr>
+
+</table>					
+<!--Bootstrap Survey-Form End-->
+
 
 </html>
