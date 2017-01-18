@@ -1,0 +1,68 @@
+.table {
+	width: 70% !important;
+}
+
+.noinherit{
+	border-top: 1px solid #fff !important;
+}
+
+.impactlabel{
+	text-align: center !important; 
+    vertical-align: middle !important;
+	border-radius: 50px 50px 0px 0px;
+	box-shadow: inset 0 -3.2px rgba(0, 0, 0, 0.12),inset 2px 0 rgba(0, 0, 0, 0.1);
+}
+.impactlabel.major {
+  background-color: #E06B2F; /*Orange*/
+}
+.impactlabel.moderate {
+  background-color: #ffd54f; /*Yellow*/
+}
+.impactlabel.minor {
+  background-color: #6CB33F; /*Green*/
+}
+.impactlabel.marginal {
+  background-color: #bdbdbd; /*Grey*/
+}
+
+.sidetopicslabel{
+	text-align: center !important; 
+    vertical-align: top !important;
+	padding: 15px !important;
+	padding-top: 1px !important;
+	border-radius: 50px 0px 0px 50px;
+	box-shadow: inset 0 -3.2px rgba(0, 0, 0, 0.12),inset 2px 0 rgba(0, 0, 0, 0.1);
+}
+.sidetopicslabel h3{
+	margin-bottom: -10px !important;	
+	text-align: center !important;
+}
+.subtopiclabel{
+	text-align: center !important; 
+    vertical-align: middle !important;
+	box-shadow: inset 0 -3.2px rgba(0, 0, 0, 0.12),inset 2px 0 rgba(0, 0, 0, 0.1);
+}
+.impactcategorylabel{
+	border: 3px solid #DDDDDD !important;
+	border-top: 0px solid #DDDDDD !important;
+	text-align: center !important;
+	margin: 0px; 
+}
+.impactcategorylabel td{
+	border-top: 0px solid #fff !important;
+	text-align: center !important;
+	margin: 0px; 
+}
+.impactcategorylabel.major {
+  background-color: #EFB496; /*Orange*/
+}
+.impactcategorylabel.moderate {
+  background-color: #FFEAA6; /*Yellow*/
+}
+.impactcategorylabel.minor {
+  background-color: #B5D89E; /*Green*/
+}
+.impactcategorylabel.marginal {
+  background-color: #DEDEDE; /*Grey*/
+}
+
